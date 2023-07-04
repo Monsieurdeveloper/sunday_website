@@ -1,0 +1,60 @@
+.content_img{
+    width: 40%;
+    height: 400px;
+    background-image: url('../img/map.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+
+.content_flex-box{
+    width: 70%;
+    height: 400px;
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts_form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.checkbox_block{
+    align-self: flex-start;
+    display: flex;
+}
+
+.checkbox_block > input{
+    accent-color: #EDB548;
+}
+
+.contacts_form > input{
+    width: calc(100% - 16px);
+    margin: 10px;
+    border-radius: 11px;
+    outline: none;
+    border: 0.5px solid #EDB548;
+    padding: 8px;
+}
+
+.contacts_form > textarea{
+    width: calc(100% - 16px);
+    margin: 10px;
+    border-radius: 11px;
+    outline: none;
+    border: 0.5px solid #EDB548;
+    padding: 8px;
+    resize: none;
+}
+
+.contacts_form > input[type="submit"] {
+    width: 40%;
+    background-color: transparent;
+}

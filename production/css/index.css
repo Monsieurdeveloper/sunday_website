@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'main-font';
+    src: url('/fonts/GOST\ Type\ AU.ttf');
+}
+@font-face {
+    font-family:'mistral';
+    src: url('../fonts/Mistral.ttf');
+}
+
+*{
+    font-family: 'main-font';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main_container{
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head_text{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.header_box{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+#content{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    background: #f5f5f5;
+}
+
+#fother{
+    width: 100%;
+    height: 161px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0) 100%), #FFFFFF !important;
+}
+
+.fother_box{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fother_text_link{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.card{
+    min-width: 200px;
+    height: 400px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 10%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.cards_heads{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    width: 80%;
+}
+
+.card_img{
+    width: 100%;
+    height: 200px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.text_head{
+    align-self: flex-start;
+}
+.text_fother{
+    align-self: flex-end;
+}
+.sorter{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 85px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #FFFFFF;
+}
+
+.f_1_head{
+    font-family: 'mistral';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.f_2, .f_3, .f_4, .f_5, .f_6, .f_7, .f_8{
+    font-family: 'main-font';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.185em;
+}
+
+.f_2{
+    border-bottom: 1px solid #E89C0B;
+}
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card_flex{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 50%;
+    margin-top: 10px;
+    flex: 1;
+}
+
+.card_flex > div{
+    width: 90%;
+}
+
+.but_tel{
+    border: 1px solid #E89C0B;
+    border-radius: 11px;
+    width: 182px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_price{
+    font-weight: 700;
+    align-self: end;
+    width: fit-content !important;
+    margin: 20px;
+}
+
+.card_info{
+    width: 80%;
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+}
+
+.card_info_img{
+    height: 100%;
+    width: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card_info_header{
+    font-size: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.card_info_close{
+    background-image: url('../img/close.svg');
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.card_info_white{
+    width: 75%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.card_info_text_flex{
+    flex: 3.5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card_info_text{
+    width: 60%;
+    margin-left: 20px;
+    letter-spacing: 0.185em;
+}
+
+.card_info_price_flex{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card_info_BJU_flex{
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    justify-content: space-between;
+}
+
+.card_info_BJU_header{
+    letter-spacing: 0.335em;
+    font-size: 30px;
+    line-height: 34px;
+}
+.card_info_BJU{
+    font-size: 30px;
+    line-height: 34px;
+}
+
+.card_info_price_header{
+    letter-spacing: 0.185em;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.card_info_price{
+    letter-spacing: 0.185em;
+    font-size: 40px;
+    line-height: 45px;
+}
